@@ -13,9 +13,9 @@ from torch.autograd import Variable
 import time
 import random
 
-TEST_IMG_PATH = "/home/ly/skin_lesion_detection/dataset/2017/ISIC-2017_Test_v2_Data"
-TEST_CSV_PATH = "/home/ly/skin_lesion_detection/dataset/2017/ISIC-2017_Training_Part3_GroundTruth.csv"
-GLO_MOD_PATH = "/home/ly/skin_lesion_detection/ResNet/isic_resnet_g.pkl"
+TEST_IMG_PATH = "/home/ly/Skin_Lesion_Detection/dataset/2017/ISIC-2017_Test_v2_Data"
+TEST_CSV_PATH = "/home/ly/Skin_Lesion_Detection/dataset/2017/ISIC-2017_Training_Part3_GroundTruth.csv"
+GLO_MOD_PATH = "/home/ly/Skin_Lesion_Detection/ResNet/isic_resnet_g.pkl"
 
 data_transforms = {
     'train': transforms.Compose([
