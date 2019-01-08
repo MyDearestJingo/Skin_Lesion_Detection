@@ -15,7 +15,7 @@ import random
 
 TEST_IMG_PATH = "/home/ly/Skin_Lesion_Detection/dataset/2017/ISIC-2017_Test_v2_Data"
 TEST_CSV_PATH = "/home/ly/Skin_Lesion_Detection/dataset/2017/ISIC-2017_Training_Part3_GroundTruth.csv"
-GLO_MOD_PATH = "/home/ly/Skin_Lesion_Detection/ResNet/isic_resnet_g.pkl"
+GLO_MOD_PATH = "/home/ly/Skin_Lesion_Detection/isic_resnet_g.pkl"
 
 data_transforms = {
     'train': transforms.Compose([
@@ -29,7 +29,7 @@ data_transforms = {
     ]),
 }
 
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+device = torch.cuda.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
 def default_loader(path):
